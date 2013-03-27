@@ -1,3 +1,7 @@
+This is a forked version of ActionBarSherlock. 
+This allows us to fix some possible bugs if necessary.
+And, if necessary, we may issue some Pull Requests back to the original project, be good citizens.
+
 ActionBarSherlock
 =================
 
