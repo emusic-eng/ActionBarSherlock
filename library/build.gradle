@@ -1,0 +1,45 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.3'
+    }
+}
+
+apply plugin: 'android-library'
+
+android {
+    compileSdkVersion 17
+    
+    defaultConfig {
+    }
+    
+    sourceSets {
+        main {
+            manifest {
+                srcFile 'AndroidManifest.xml'
+            }
+            java {
+                srcDir 'src'
+            }
+            res {
+                srcDir 'res'
+            }
+            assets {
+                srcDir 'assets'
+            }
+            resources {
+                srcDir 'src'
+            }
+            aidl { 
+                srcDir 'src'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', includes: ['*.jar'])
+}
